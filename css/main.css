@@ -10,7 +10,7 @@ body{
 	background-color: #f2f2f2;
 	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
-	padding-top: 5%;
+	padding-top: 55px;
 }
 header{
 	background-color: #4357ad;
@@ -84,4 +84,39 @@ main article hr{
 main article p{
 	margin-bottom: 1em;
 	padding: 1%;
+}
+/***Efectos del Menu***/
+.headroom{
+	transition: transform .3s ease;
+}
+.headroom--pinned{
+	transform: translateY(0%);
+}
+.headroom--unpinned{
+	transform: translateY(-100%);
+	/* background-color: #444; */
+}
+
+/***media query***/
+@media screen and (max-width: 760px){
+	header .menu{
+		flex-direction: column;
+	}
+	header .menu .logo{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		padding: 1em;
+	}
+	header .menu .logo .btn-menu{
+		display: inline-block;
+	}
+	header .menu .enlaces{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 }
