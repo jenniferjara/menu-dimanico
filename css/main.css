@@ -1,0 +1,77 @@
+/***fonts***/
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-color: #f2f2f2;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	padding-top: 5%;
+}
+header{
+	background-color: #4357ad;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+.menu{
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu .logo{
+	display: inline-block;
+	margin-right: 1em;
+}
+.menu .logo:hover{
+	background-color: #4351ad;
+}
+.menu .logo img{
+	vertical-align: top;
+	height: 25px;
+}
+.menu .btn-menu {
+	display: none;
+	color: #fff;
+	font-size: 1em;
+	text-decoration: none;
+}
+.menu .enlaces{
+	display: inline-block;
+	text-align: right;
+}
+.menu .enlaces a{
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em;
+	text-align: center;
+	font-size: 1em;
+}
+.menu .enlaces i{
+	margin-right: 5px;
+}
+.menu .enlaces a:hover{
+	color:#4357ad;
+	background-color: #f2f2f2;
+}
+main{
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.75)
+}
+main-article h1{
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
