@@ -1,5 +1,4 @@
 $(function(){
-	//$("#header").headroom();
 	var header = document.getElementById("header");
 	var headroom = new Headroom(header);
 	headroom.init();
@@ -15,10 +14,10 @@ $(function(){
 		enlaces.hide();
 		icono.addClass("fa fa-bars");
 	}
-	btnMenu.on("click", function(){
+	btnMenu.on("click", function(e){
+		enlaces.slideToggle();
 		icono.toggleClass("fa-bars");
 		icono.toggleClass("fa-times");
-		enlaces.slideToggle();
 	});
 
 	$(window).on("resize", function(){
